@@ -5,11 +5,15 @@ In your project directory, create a new file name as dashboard.js that implement
 
 var dashboard = new Dashboard('sidebar','content');
 dashboard.render('Home','Account','Message','Support');
-The constructor takes an argument consisting of two id attributes for two existing div (sidebar and content). The object should have a render method that takes one argument consisting of a list of section names ('Home', 'Account', 'Message', 'Support'). When render is invoked it replaces the contents of the sidebar's div with HTML that displays a list of buttons with text from the section names. It also put a default heading into the content's div with HTML that displays "Welcome to Dashboard!":
+The constructor takes an argument consisting of two id attributes for two existing div (sidebar and content).
+ The object should have a render method that takes one argument consisting of a list of section names ('Home', 'Account', 'Message', 'Support').
+ When render is invoked it replaces the contents of the sidebar's div with HTML that displays a list of buttons with text from the section names.
+ It also put a default heading into the content's div with HTML that displays "Welcome to Dashboard!":
 
 Welcome to Dashboard!
 
-When a button on the sidebar is clicked, the "active-btn" class should be added to the clicked button and should be removed from other buttons. The content's div should display a heading with the name of the clicked button:
+When a button on the sidebar is clicked, the "active-btn" class should be added to the clicked button and should be removed from other buttons.
+ The content's div should display a heading with the name of the clicked button:
 
 Home
 Account
@@ -17,7 +21,10 @@ Account
 Message
 Support.
 
-Once you have created the JavaScript class, I have provided a file index.html (you do not need to modify this html file) containing two empty div elements, plus a bit of JavaScript code that invokes the Dashboard class to display a sidebar and the content area. The provided html file also has a styling stylesheet with the filename dashboard.css.-->
+Once you have created the JavaScript class, I have provided a file index.html 
+(you do not need to modify this html file) containing two empty div elements, plus a bit of JavaScript code that
+ invokes the Dashboard class to display a sidebar and the content area. The provided html file also has a styling stylesheet 
+with the filename dashboard.css.-->
 
 
 
