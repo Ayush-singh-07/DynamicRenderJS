@@ -14,14 +14,14 @@ class Dashboard{
     }
     handler(module){
         document.getElementById(this.sidebar).innerHTML =`<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
-                                                    <button id="Home" class="w3-button w3-block w3-left-align " onclick="handler(this.id)">
-                                                    Home </button>    <button id="Account"  class="w3-button w3-block w3-left-align " onclick="handler(this.id)">
+                                                    <button id="Home" class="w3-button w3-block w3-left-align " onclick="onclickhandler(this.id)">
+                                                    Home </button>    <button id="Account"  class="w3-button w3-block w3-left-align " onclick="onclickhandler(this.id)">
                                                     Account </button>
                                                 
-                                                    <button id="Message"  class="w3-button w3-block w3-left-align " onclick="handler(this.id)">
+                                                    <button id="Message"  class="w3-button w3-block w3-left-align " onclick="onclickhandler(this.id)">
                                                     Message </button>
                                                 
-                                                    <button id="Support"  class="w3-button w3-block w3-left-align " onclick="handler(this.id)">
+                                                    <button id="Support"  class="w3-button w3-block w3-left-align " onclick="onclickhandler(this.id)">
                                                     Support </button> `
     
         
@@ -52,7 +52,7 @@ function makechanges(id){
 }
 
 
-function handler(id){
+function onclickhandler(id){
 document.getElementById(id).classList.add('active-btn');
 makechanges(id);
 }
